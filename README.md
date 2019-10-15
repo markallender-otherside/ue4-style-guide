@@ -1,4 +1,4 @@
-# [Gamemakin](https://gamemak.in) UE4 Style Guide() {
+# SS3 UE4 Style Guide() {
 
 *A mostly reasonable approach to Unreal Engine 4*
 
@@ -10,9 +10,6 @@ Heavily inspired by the [Airbnb Javascript Style Guide](https://github.com/airbn
 
 An automated method of checking your project against this style guide is available for purchase at [the Unreal Engine marketplace](https://www.unrealengine.com/marketplace/linter). This plugin's source code will eventually be free, but in order to use with UE4 without building the engine from source code, please use the marketplace version.
 
-## Discuss This Style Guide
-
-Gamemakin LLC has a public Discord channel at http://discord.gamemak.in with a #linter channel if you'd like to discuss all things style guide and Linter plugin.
 
 ## Linking To This Document
 
@@ -1385,7 +1382,7 @@ Every texture has a Texture Group property used for LODing, and this should be s
 
 
 ## Contributors
-
+* [Mark Allender](https://github.com/markallender-otherside)
 * [Michael Allar](http://allarsblog.com): [GitHub](https://github.com/Allar), [Twitter](https://twitter.com/michaelallar)
 * [CosmoMyzrailGorynych](https://github.com/CosmoMyzrailGorynych)
 * [billymcguffin](https://github.com/billymcguffin)
