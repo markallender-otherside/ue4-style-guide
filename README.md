@@ -108,7 +108,7 @@ When joining an Unreal Engine 4 team one of your first questions should be "Do y
 <a name="0.5"></a>
 ### 0.5 Don't Break The Law
 
-Gamemakin LLC is not a lawyer, but please don't introduce illegal actions and behavior to a project, including but not limited to:
+Do not introduce illegal actions and behavior to a project, including but not limited to:
 
 * Don't distribute content you don't have the rights to distribute
 * Don't infringe on someone else's copyrighted or trademark material
@@ -213,7 +213,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| Level / Map             |            |            | [Should be in a folder called Maps.](#2.4) |
+| Level / Map             |            |            | [Should be in a folder called Maps.](#2.4)  Also unsure of exact naming for SS3 for levels |
 | Level (Persistent)      |            | _P         |                                  |
 | Level (Audio)           |            | _Audio     |                                  |
 | Level (Lighting)        |            | _Lighting  |                                  |
@@ -431,54 +431,47 @@ There are multiple ways to lay out the content of a UE4 project. In this style, 
 ### 2e1 Example Project Content Structure
 <pre>
 |-- Content
-    |-- <a href="#2.2">GenericShooter</a>
-        |-- Art
-        |   |-- Industrial
-        |   |   |-- Ambient
-        |   |   |-- Machinery
-        |   |   |-- Pipes
-        |   |-- Nature
-        |   |   |-- Ambient
-        |   |   |-- Foliage
-        |   |   |-- Rocks
-        |   |   |-- Trees
-        |   |-- Office
+    |-- <a href="#2.2">ss3</a>
         |-- Characters
-        |   |-- Bob
+        |   |-- Mutant
+        |   |   |-- <a href="#2.7">Animations</a>
+        |   |   |-- Audio
         |   |-- Common
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
-        |   |-- Jack
-        |   |-- Steve
-        |   |-- <a href="#2.1.3">Zoe</a>
-        |-- <a href="#2.5">Core</a>
-        |   |-- Characters
-        |   |-- Engine
-        |   |-- <a href="#2.1.2">GameModes</a>
-        |   |-- Interactables
-        |   |-- Pickups
-        |   |-- Weapons
-        |-- Effects
-        |   |-- Electrical
-        |   |-- Fire
-        |   |-- Weather
-        |-- <a href="#2.4">Maps</a>
-        |   |-- Campaign1
-        |   |-- Campaign2
+        |   |-- Player
+        |   |-- <a href="#2.1.3">Engineer_01</a>
+	|-- Core
+	|   |-- Blueprints
+	|-- Design
+	|   |-- (other UE related design things like timelines, etc)
+        |   |-- Placeables
+        |   |    |-- Pickups
+        |-- <a href="#2.3">Developer</a>
+        |   |-- Allender
+	|   |-- Cisco
+	|   |-- Robb
+        |-- Environments
+        |   |--  NEED HELP FROM ARTISTS
+        |-- <a href="#2.4">Levels</a>
+        |   |-- Hangar
+        |   |-- MedLevel
+	|-- Maker
+	|   |-- Blueprints
+	|   |-- Materials
+	|   |-- Meshes
         |-- <a href="#2.8">MaterialLibrary</a>
         |   |-- Debug
         |   |-- Metal
         |   |-- Paint
         |   |-- Utility
         |   |-- Weathering
-        |-- Placeables
-        |   |-- Pickups
-        |-- Weapons
-            |-- Common
-            |-- Pistols
-            |   |-- DesertEagle
-            |   |-- RocketPistol
-            |-- Rifles
+        |-- VFX
+        |   |-- Cold
+        |   |-- Electrical
+        |   |-- Fire
+	|-- UI
+	|   |-- Detail to follow
 </pre>
 
 The reasons for this structure are listed in the following sub-sections.
