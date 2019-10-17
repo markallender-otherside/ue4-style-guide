@@ -217,7 +217,8 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Static Mesh             | S_         |            | Many use SM_. We use S_.         |
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
-| Particle System         | PS_        |            |                                  |
+| Cascade Particle System | PS_        |            |                                  |
+| Niagara Particle System | NP_        |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
 
 <a name="anc-animations"></a>
@@ -281,6 +282,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
 | Material                      | M_         |            |                                  |
 | Material (Post Process)       | PP_        |            |                                  |
+| Material (Particle System)    | M_, MI_    | _Particle  |                                  |
 | Material Function             | MF_        |            |                                  |
 | Material Instance             | MI_        |            |                                  |
 | Material Parameter Collection | MPC_       |            |                                  |
@@ -403,10 +405,14 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 <a name="1.2.12"></a>
 ### 1.2.12 Effects ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
-| ----------------------- | ---------- | ---------- | -------------------------------- |
-| Particle System         | PS_        |            |                                  |
-| Material (Post Process) | PP_        |            |                                  |
+| Asset Type                 | Prefix     | Suffix     | Notes                            |
+| -------------------------- | ---------- | ---------- | -------------------------------- |
+| Cascade Particle System    | PS_        |            |                                  |
+| Niagara Particle System    | NP_        |            |                                  |
+| Material (Post Process)    | PP_        |            |                                  |
+| Material (Particle System) | M_, MI_    | _Particle  |                                  |
+| Niagara Module             | NM_        |            |                                  |
+| Niagara Emitter            | NE_        |            |                                  |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1257,7 +1263,7 @@ This section will focus on Particle System assets and their internals.
 <a name="ps-emitter-naming"></a>
 ### 5.1 Emitter Naming ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-All emitters in a Particle System should be named something descriptive and not left to their default name "Particle Emitter".
+All emitters in a Particle System should be named something descriptive and not left to their default name "Particle Emitter". If they are Niagra emitters, they should have a "NE_" prefix.
 
 **[⬆ Back to Top](#table-of-contents)**
 
