@@ -247,7 +247,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| AI Controller           | AIC_       |            |                                  |
+| AI Controller           | AICBP_     |            |                                  |
 | Behavior Tree           | BT_        |            |                                  |
 | Blackboard              | BB_        |            |                                  |
 | Decorator               | BTDecorator_ |          |                                  |
@@ -271,6 +271,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
+| Character Bluepint      | CHRBP_     |            |                                  |
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
@@ -426,15 +427,16 @@ There are multiple ways to lay out the content of a UE4 project. In this style, 
 |-- Content
     |-- <a href="#2.2">ss3</a>
         |-- Characters
-        |   |-- Mutant
+        |   |-- Mutant(_01)
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
+	|   |   |-- Blueprints
         |   |-- Common
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
         |   |-- Player
         |   |-- <a href="#2.1.3">Engineer_01</a>
-	|-- Core
+	|-- <a href="#2.5">Core</a>
 	|   |-- Blueprints
 	|-- Design
 	|   |-- (other UE related design things like timelines, etc)
