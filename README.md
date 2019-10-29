@@ -463,6 +463,7 @@ There are multiple ways to lay out the content of a UE4 project. In this style, 
 	|   |-- Meshes
         |-- <a href="#2.8">MaterialLibrary</a>
         |   |-- Debug
+	|   |-- Master (for master materials)
         |   |-- Metal
         |   |-- Paint
         |   |-- Utility
